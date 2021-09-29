@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goit-markup-hw-03</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="mobile-menu container">
+          <a href="./index.html" class="webstudio"
+            >Web<span class="Weblogo">Studio</span></a
+          >
+        <nav class="container__nav">
+          <ul class="links">
+            <li class="links__list">
+              <a href="index.html" class="links__list__work-links">Студия</a>
+            </li>
+            <li class="links__list">
+              <a href="portfolio.html" class="active-menu">Портфолио</a>
+            </li>
+            <li class="links__list"><a href="#" class="links__list__work-links">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="address">
+          <li class="address__email">
+            <a class="address__email__contacts" href="mailto:info@devstudio.com">
+              <svg class="icon icon-m" width="16" height="16">
+                <use
+                  href="./img-goit-hw-1/svg/symbol-defs.svg#icon-envelope"
+                ></use>
+              </svg>info@devstudio.com</a
+            >
+          </li>
+          <li class="address__email">
+            <a class="address__email__contacts" href="tel:+380961111111">
+              <svg class="icon icon-p" width="16" height="16">
+                <use
+                  href="./img-goit-hw-1/svg/symbol-defs.svg#icon-smartphone"
+                ></use></svg>+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button type="button" aria-expanded="false" class="mobile-menu-open js-open-menu" ><span class="burger-open"></span>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden js-menu-container" >
+        <div class="mob-container">
+        <button type="button" class="mobile-menu-close js-close-menu" ><span class="burger-close"></span>
+          <div class="header-menu">
+                <ul class="mob-menu-links">
+                  <li class="mob-menu-item"><a href="index.html" class="mob-menu-nav studia-nav">Студия</a></li>
+                  <li class="mob-menu-item"><a href="portfolio.html" class="mob-menu-nav active-menu">Портфолио</a></li>
+                  <li class="mob-menu-item"><a href="#" class="mob-menu-nav portfolio-nav">Контакты</a></li>
+                </ul>
+                <ul class="mob-contacts-links">
+                  <li class="mob-contacts-item">
+                    <a href="tel:+380961111111" class="mob-contacts-phone">+38 096 111 11 11</a>
+                  </li>
+                  <li class="mob-contacts-item">
+                    <a href="mailto:info@devstudio.com" class="mob-contacts-mail">info@devstudio.com</a>
+                  </li>
+                </ul>
+                  <ul class="mob-soc-menu">
+                    <li class="mob-soc-item"><a href="#" class="mob-soc-links">Instagram</a></li>
+                    <li class="mob-soc-item"><a href="#" class="mob-soc-links">Twitter</a></li>
+                    <li class="mob-soc-item"><a href="#" class="mob-soc-links">Facebook</a></li>
+                    <li class="mob-soc-item"><a href="#" class="mob-soc-links">LinkedIn</a></li>
+                  </ul></div></div>
+      </div>
+    </header>
+
+    <!--Портфолио-->
+    <main>
+      <section class="hidden-section">
+        <div class="container">
+          <h1 class="visually-hidden">Zagolovok</h1>
+          <!--Кнопки-->
+              <ul class="buttons_list nav-port">
+                <li class="buttons_list__item">
+                  <button
+                    type="button"
+                    class="buttons_list__item__lists active-button"
+                  >
+                    Все
+                  </button>
+                </li>
+                <li class="buttons_list__item">
+                  <button type="button" class="buttons_list__item__lists">
+                    Веб-сайты
+                  </button>
+                </li>
+                <li class="buttons_list__item">
+                  <button type="button" class="buttons_list__item__lists">
+                    Дизайн
+                  </button>
+                </li>
+                <li class="buttons_list__item">
+                  <button type="button" class="buttons_list__item__lists">
+                    Маркетинг
+                  </button>
+                </li>
+                <li class="buttons_list__item">
+                  <button type="button" class="buttons_list__item__lists">
+                    Приложения
+                  </button>
+                </li>
+              </ul>
+            <!--Услуги-->
+              <ul class="services section_services_list">
+                <li class="services__port_item">
+                  <a class="services__port_item__goods" href="#"
+                    >
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/technocrack@2x.jpg x2"
+                      class="vnezapno__img_list"
+                      src="img-goit-hw-1/technocrack.jpg"
+                      alt=""
+                    />
+                    <div class="vnezapno__overlay">
+                    <p class="vnezapno__overlay__explanation">
+                        Технокряк это современная площадка распространения
+                        коронавируса. Компании используют эту платформу для
+                        цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Технокряк</h2>
+                      <p class="vnezapno__text__type">Веб-сайт</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/poster-new-orleans@2x.jpg"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/poster-new-orleans.jpg x2"
+                        alt=""
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          Постер о двух потных мужиках с ненавистью дерущихся за мячик
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Постер New Orlean vs Golden Star</h2>
+                      <p class="vnezapno__text__type">Дизайн</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/Seafood@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/Seafood.jpg"
+                        alt=""
+                        width="370"
+                        height="294"
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          Seafood restaurant - ресторан, в котором вот уже 20 лет подают... кто бы мог подумать... РЫБУ!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Ресторан Seafood</h2>
+                      <p class="vnezapno__text__type">Приложение</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/Prime@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/Prime.jpg"
+                        alt=""
+                        width="370"
+                        height="294"
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          Это наушники. А вы что подумали?
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Проект Prime</h2>
+                      <p class="vnezapno__text__type">Маркетинг</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/Boxes@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/Boxes.jpg"
+                        alt=""
+                        width="370"
+                        height="294"
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          Мы для всего найдем подходящую коробку. И для всех, если надо.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Проект Boxes</h2>
+                      <p class="vnezapno__text__type">Приложение</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/Inspiration@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/Inspiration.jpg"
+                        alt=""
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                        Веб-конференция, посвященная тематике пандемии нового глобального вируса InspIRAtioN-21, преодолевающего любые границы.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Inspiration has no Borders</h2>
+                      <p class="vnezapno__text__type">Веб-сайт</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/LTD@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/LTD.jpg"
+                        alt=""
+                        width="370"
+                        height="294"
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          Бестселлер о двух уникальных девушках, которые не умеют пользоваться феном, зато знают как показать цифру 2 пальцами.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Издание Limited Edition</h2>
+                      <p class="vnezapno__text__type">Дизайн</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/LAB@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/LAB.jpg"
+                        alt=""
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          Компания по производству спецбирок для паталогоанатомов и судмедэкспертов.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Проект LAB</h2>
+                      <p class="vnezapno__text__type">Маркетинг</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="services__port_item">
+                  <a href="#" class="services__port_item__goods">
+                    <div class="vnezapno">
+                      <img srcset="img-goit-hw-1/growing-business@2x.jpg x2"
+                      class="vnezapno__img_list"
+                        src="img-goit-hw-1/growing-business.jpg"
+                        alt=""
+                      />
+                    <div class="vnezapno__overlay">
+                      <p class="vnezapno__overlay__explanation">
+                          "Он честно вырастит!" - сказал Кот Базилио.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="vnezapno__text">
+                      <h2 class="vnezapno__text__brand">Growing Business</h2>
+                      <p class="vnezapno__text__type">Приложение</p>
+                    </div>
+                  </a>
+                </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+   <footer class="footer">
+    <div class="container footer__flex">
+      <div class="footer__flex__box">
+      <a href="./index.html" class="webstudio-footer"
+        >Web<span class="Web_logo_footer">Studio</span></a
+      >
+      <address class="adress mail">
+        <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="footer-address">
+          <li class="footer-address__mailto">
+            <a href="mailto:info@example.com" class="footer-address__mailto__contacts-footer"
+              >info@example.com</a
+            >
+          </li>
+          <li class="footer-address__mailto">
+            <a href="tel:+380991111111" class="footer-address__mailto__contacts-footer">+38 099 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+      <div class="footer__flex__box">
+          <p class="join">Присоединяйтесь</p>
+              <ul class="join__icon-flex">
+                <li class="join__icon-flex__item">
+                  <a class="icon-team" href="">
+                    <svg class="icon-team__join" width="20" height="20">
+                      <use href="./img-goit-hw-1/svg/symbol-defs.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join__icon-flex__item">
+                  <a class="icon-team" href="">
+                    <svg class="icon-team__join" width="20" height="20">
+                      <use href="./img-goit-hw-1/svg/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join__icon-flex__item">
+                  <a class="icon-team" href="">
+                    <svg class="icon-team__join" width="20" height="20">
+                      <use href="./img-goit-hw-1/svg/symbol-defs.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join__icon-flex__item">
+                  <a class="icon-team" href="">
+                    <svg class="icon-team__join" width="20" height="20">
+                      <use href="./img-goit-hw-1/svg/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <div class="footer__flex__box">
+            <p class="subscribe">Подпишись на рассылку</p>
+            <form class="subscribe__form" action="mail.php">
+              <input class="subscribe__form__email" type="email" name="mail" id="mail" placeholder="E-mail" />
+              <button type="submit" class="subscribe__form__button">Подписаться
+                <svg width="24" height="24" class="subscribe__form__button__send">
+                  <use href="./img-goit-hw-1/svg/send.svg#send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+    </footer>
+    <script src="./JS/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.icon-flex {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.icon-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+  color: var(--icon-color);
+  transition: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .icon-soc,
+  &:focus .icon-soc {
+    fill: var(--main-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+}
+.icon-soc {
+  fill: currentColor;
+}

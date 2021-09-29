@@ -1,0 +1,30 @@
+@import "./base/_elementary.scss";
+@import "./base/_container.scss";
+@import "./base/_variables.scss";
+@import "./base/_underline.scss";
+
+@import "./index/_nav_container.scss";
+@import "./index/_hero.scss";
+@import "./index/_skills.scss";
+@import "./index/_what_we_are_doing.scss";
+@import "./index/_employees.scss";
+@import "./index/_clients.scss";
+
+@import "./portfolio/_buttons.scss";
+@import "./portfolio/_services.scss";
+
+@import "./layout/_mobile_menu.scss";
+@import "./layout/_social_network.scss";
+@import "./layout/_header.scss";
+@import "./layout/_logo.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_join.scss";
+@import "./layout/_subscribe.scss";
+
+@import "./modal/_backdrop.scss";
+@import "./modal/_modal.scss";
+@import "./modal/_modal_close.scss";
+@import "./modal/_modal_window.scss";
+@import "./modal/_modal_icon.scss";
+@import "./modal/_modal_button.scss";
+@import "./modal/_checkbox.scss";

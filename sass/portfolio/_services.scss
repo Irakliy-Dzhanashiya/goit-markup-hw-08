@@ -1,0 +1,104 @@
+.section_services_list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+.vnezapno__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform var(--delay) var(--time-function);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: var(--accent-color);
+  opacity: 0.9;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__explanation {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+  }
+}
+.services__port_item__goods {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  transition: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .vnezapno__overlay,
+  &:focus .vnezapno__overlay {
+    transform: translateY(0);
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.services__port_item {
+  width: 450px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 404px;
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.vnezapno {
+  position: relative;
+  overflow: hidden;
+  &__img_list {
+    width: 450px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
+  }
+}
+.vnezapno__text {
+  padding: 20px 21px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  @media screen and (min-width: 768px) {
+    height: 146px;}
+  &__brand {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+  }
+  &__type {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--alt-text-color);
+  }
+}

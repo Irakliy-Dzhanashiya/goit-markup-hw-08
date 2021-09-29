@@ -1,0 +1,13 @@
+.modal-name-icon,
+.modal-phone-icon,
+.modal-email-icon {
+  position: absolute;
+  top: 31px;
+  left: 15px;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  fill: var(--black);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
