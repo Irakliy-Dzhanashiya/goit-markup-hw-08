@@ -61,7 +61,7 @@
   .description__skills_list {
     width: calc((768px - 30px * 2) / 2);
     &:not(:nth-child(2n)) {
-      margin-right: 30px;
+      margin-right: 20px;
     }
   }
 }
