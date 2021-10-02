@@ -1218,12 +1218,13 @@ visually-hidden {
           transform: rotate(90deg);
 }
 
-.mob-menu.is-hidden {
+.mob-menu.is-open {
   opacity: 0;
   pointer-events: none;
 }
 
 .mob-menu {
+  z-index: 999;
   position: fixed;
   background-color: var(--main-color);
   top: 0;
@@ -1240,8 +1241,10 @@ visually-hidden {
   }
 }
 
-.header-menu {
-  margin: 0 440px 0 -500px;
+.mob-container {
+  margin-left: 40px;
+  margin-top: 48px;
+  width: 100%;
 }
 
 .mob-menu-links,
@@ -1258,12 +1261,10 @@ visually-hidden {
 }
 
 .mob-menu-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 302px;
 }
 
@@ -1274,10 +1275,6 @@ visually-hidden {
 .mob-menu-item {
   cursor: pointer;
   padding-bottom: 36px;
-}
-
-.mob-menu-item:not(:first-child) {
-  margin-bottom: 36px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -1310,7 +1307,7 @@ visually-hidden {
 }
 
 .mob-contacts-item {
-  width: 285px;
+  width: 100%;
   height: 40px;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -1323,7 +1320,7 @@ visually-hidden {
   font-family: Roboto;
   font-size: 34px;
   line-height: 1.17px;
-  width: 285px;
+  width: 100%;
   text-decoration: none;
   color: var(--accent-color);
 }
@@ -1336,6 +1333,7 @@ visually-hidden {
           justify-content: left;
   float: left;
   padding-top: 32px;
+  padding-bottom: 64px;
   font-size: 24px;
   line-height: 1.17px;
   text-decoration: none;
