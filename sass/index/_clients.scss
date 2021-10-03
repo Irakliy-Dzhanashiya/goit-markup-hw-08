@@ -10,6 +10,7 @@
 .clients__flex {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
@@ -21,6 +22,9 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((768px - 15px * 6) / 3);
+  }
+  @media screen and (min-width: 1199px) {
+  margin-top: 0;
   }
 }
 .clients__box {

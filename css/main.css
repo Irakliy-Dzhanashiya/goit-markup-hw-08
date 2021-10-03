@@ -296,7 +296,7 @@ visually-hidden {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   background: var(--alt-bg-color);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../img-goit-hw-1/hero-mobile.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../img-goit-hw-1/hero-mobile.jpg");
@@ -317,6 +317,7 @@ visually-hidden {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../img-goit-hw-1/overlay.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../img-goit-hw-1/overlay.jpg");
     display: -webkit-box;
@@ -503,7 +504,7 @@ visually-hidden {
   color: var(--text-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .description__skills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -771,6 +772,7 @@ visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -793,6 +795,12 @@ visually-hidden {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__list {
     width: calc((768px - 15px * 6) / 3);
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .clients__list {
+    margin-top: 0;
   }
 }
 
@@ -1068,6 +1076,7 @@ visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 
 .vnezapno {
@@ -1233,6 +1242,12 @@ visually-hidden {
   height: 100%;
   padding-top: 48px;
   padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media screen and (min-width: 768px) {
